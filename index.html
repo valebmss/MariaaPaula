@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Inmobiliario</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+
+        html   {
+            scroll-behavior: smooth;
+            font-family: "Poppins", sans-serif;
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        .hover-zoom {
+            transition: transform 0.3s ease;
+        }
+
+        .hover-zoom:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto">
+        <!-- Header -->
+        <header class="bg-yellow-900 0 shadow-md py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+                <h1 class="text-3xl  text-white">Maria Paula, Tocancipa</h1>
+                <nav>
+                    <a href="#features" class="text-white hover:text-gray-200 mx-4">Características</a>
+                    <a href="#gallery" class="text-white hover:text-gray-200 mx-4">Galería</a>
+                    <a href="#plans" class="text-white hover:text-gray-200 mx-4">Planos</a>
+                    <a href="#contact" class="text-white hover:text-gray-200 mx-4">Contacto</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="bg-cover bg-center h-screen text-white" style="background-image: url('img/1.jpeg');">
+            <div class="flex items-center justify-center h-full bg-black bg-opacity-50 fade-in">
+                <div class="text-center">
+                    <h2 class="text-4xl md:text-6xl font-bold">Tu Nuevo Hogar Te Espera</h2>
+                    <p class="mt-4 text-xl md:text-2xl">Viviendas modernas y accesibles en una ubicación privilegiada.</p>
+                    <a href="#contact" class="mt-8 inline-block bg-yellow-700 hover:bg-yellow-800 text-white text-lg font-semibold py-3 px-6 rounded-lg">Contáctanos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Características Generales</h2>
+                <div class="mt-12 grid gap-8 md:grid-cols-3">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
+                        <div class="flex justify-center mb-4">
+                            <img src="https://cdn-icons-png.freepik.com/256/63/63820.png?semt=ais_hybrid" alt="zona verde" class="h-20 w-20">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Excelente ubicación</h3>
+                        <p class="mt-4 text-gray-600">Conjunto privado en Tocancipa</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
+                        <div class="flex justify-center mb-4">
+                            <img src="https://img.freepik.com/vector-premium/icono-hoja-verde-ecologica-bio-naturaleza-verde-eco-simbolo-web-negocios_599062-3733.jpg" alt="zona verde" class="h-20 w-20">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Áreas Verdes</h3>
+                        <p class="mt-4 text-gray-600">Amplios espacios verdes y zonas recreativas para toda la familia.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
+                        <div class="flex justify-center mb-4">
+                            <img src="https://img.freepik.com/vector-premium/icono-hoja-verde-ecologica-bio-naturaleza-verde-eco-simbolo-web-negocios_599062-3733.jpg" alt="zona verde" class="h-20 w-20">
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800">Áreas Verdes</h3>
+                        <p class="mt-4 text-gray-600">Amplios espacios verdes y zonas recreativas para toda la familia.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Galería</h2>
+                <div class="mt-12 grid gap-8 md:grid-cols-3">
+                    <img src="img/comedor.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/comedor.jpeg')">
+                    <img src="img/habitacion.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/habitacion.jpeg')">
+                    <img src="img/sala.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/sala.jpeg')">
+                    <img src="img/sala2.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/sala2.jpeg')">
+                    <img src="img/1.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/1.jpeg')">
+                </div>
+            </div>
+        </section>
+
+        <!-- Plans Section -->
+        <section id="plans" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Planos</h2>
+                <div class="mt-12 grid gap-8 md:grid-cols-3">
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
+                        <h3 class="text-xl font-bold text-gray-800">Plano 1</h3>
+                        <p class="mt-4 text-gray-600">Descripción del plano 1.</p>
+                        <img src="img/plano1.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/plano1.jpeg')">
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
+                        <h3 class="text-xl font-bold text-gray-800">Plano 2</h3>
+                        <p class="mt-4 text-gray-600">Descripción del plano 2.</p>
+                        <img src="img/plano2.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/plano2.jpeg')">
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
+                        <h3 class="text-xl font-bold text-gray-800">Plano 3</h3>
+                        <p class="mt-4 text-gray-600">Descripción del plano 3.</p>
+                        <img src="img/plano3.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/plano3.jpeg')">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-100">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold text-gray-900">Contacto</h2>
+                <p class="mt-4 text-lg text-gray-600">Déjanos tus datos y nos pondremos en contacto contigo.</p>
+                <form action="#" class="mt-8 max-w-md mx-auto">
+                    <div class="grid gap-4 sm:grid-cols-2">
+                        <input type="text" placeholder="Nombre" class="w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-blue-500">
+                        <input type="email" placeholder="Correo Electrónico" class="w-full p-3 border rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-blue-500">
+                    </div>
+                    <textarea placeholder="Mensaje" class="w-full p-3 mt-4 border rounded-lg shadow-sm focus:outline-none focus:ring focus:ring-blue-500"></textarea>
+                    <button type="submit" class="mt-6 w-full bg-yellow-500 hover:bg-yellow-600 text-white text-lg font-semibold py-3 rounded-lg shadow-lg">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gradient-to-r from-green-400 to-blue-500 py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <p class="text-white">&copy; 2024 Proyecto Inmobiliario. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function openImage(src) {
+            const newWindow = window.open("", "_blank");
+            newWindow.document.write("<img src='" + src + "' style='width:80%'>");
+        }
+    </script>
+</body>
+</html>
