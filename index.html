@@ -39,15 +39,28 @@
 <body class="bg-gray-100">
     <div class="container mx-auto">
         <!-- Header -->
-        <header class="bg-yellow-900 0 shadow-md py-6">
+        <header class="bg-yellow-900 shadow-md py-6">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-                <h1 class="text-3xl  text-white">Maria Paula, Tocancipa</h1>
-                <nav>
+                <h1 class="text-3xl text-white">Maria Paula, Tocancipa</h1>
+                <nav class="hidden md:flex">
                     <a href="#features" class="text-white hover:text-gray-200 mx-4">Características</a>
                     <a href="#gallery" class="text-white hover:text-gray-200 mx-4">Galería</a>
                     <a href="#plans" class="text-white hover:text-gray-200 mx-4">Planos</a>
                     <a href="#contact" class="text-white hover:text-gray-200 mx-4">Contacto</a>
                 </nav>
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-white focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="menu" class="hidden md:hidden">
+                <a href="#features" class="block text-white hover:text-gray-200 px-4 py-2">Características</a>
+                <a href="#gallery" class="block text-white hover:text-gray-200 px-4 py-2">Galería</a>
+                <a href="#plans" class="block text-white hover:text-gray-200 px-4 py-2">Planos</a>
+                <a href="#contact" class="block text-white hover:text-gray-200 px-4 py-2">Contacto</a>
             </div>
         </header>
 
@@ -65,7 +78,7 @@
         <!-- Features Section -->
         <section id="features" class="py-20 bg-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-gray-900">Características Generales</h2>
+                <h2 class="text-3xl font-bold text-yellow-900">Características Generales</h2>
                 <div class="mt-12 grid gap-8 md:grid-cols-3">
                     <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
                         <div class="flex justify-center mb-4">
@@ -96,7 +109,7 @@
         <!-- Gallery Section -->
         <section id="gallery" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-gray-900">Galería</h2>
+                <h2 class="text-3xl font-bold text-yellow-900">Galería</h2>
                 <div class="mt-12 grid gap-8 md:grid-cols-3">
                     <img src="img/comedor.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/comedor.jpeg')">
                     <img src="img/habitacion.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/habitacion.jpeg')">
@@ -110,24 +123,25 @@
         <!-- Plans Section -->
         <section id="plans" class="py-20 bg-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-gray-900">Planos</h2>
+                <h2 class="text-3xl font-bold text-yellow-900">Planos</h2>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
                     <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Primer piso</h3>
-                            <ul class="mb-10">
-                                <li>Parqueadero propio y cubierto</li>
-                                <li>Baño de invitados</li>
-                                <li>Sala y comedor independientes</li>
-                                <li>Patio exterior propio</li>
-                                <li>Chimenea</li>
-                                <li>Cocina americana</li>
-                                <li>Meson en granito</li>
-                            </ul>                        
+                        <h3 class="text-xl font-bold text-yellow-800 mb-4">Primer piso</h3>
+                        <ul class="mb-10 list-disc list-inside text-left">
+                            <li>Parqueadero propio y cubierto</li>
+                            <li>Baño de invitados</li>
+                            <li>Sala y comedor independientes</li>
+                            <li>Patio exterior propio</li>
+                            <li>Chimenea</li>
+                            <li>Cocina americana</li>
+                            <li>Meson en granito</li>
+                        </ul>
+                                               
                 <img src="img/p2.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/plano1.jpeg')">
                     </div>
                     <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Segundo piso</h3>
-                        <ul class="mb-10">
+                        <h3 class="text-xl font-bold text-yellow-800 mb-4">Segundo piso</h3>
+                        <ul class="mb-10 list-disc list-inside text-left">
                             <li>Habitacion principal con baño privado</li>
                             <li>Habitacion con vestier</li>
                             <li>2 Habitaciones auxiliares</li>
