@@ -93,17 +93,31 @@
             </div>
         </section>
 
-        <section id="video" class="py-20 bg-white flex flex-col items-center">
-            <h2 class="text-3xl font-bold text-yellow-900 mb-8">Explora el Proyecto</h2>
-            <div class="relative max-w-3xl">
-                <iframe width="315" height="560"
-                src="https://www.youtube.com/embed/xhQrGTstXHQ?si=dUfjWVXHQGVCovlq"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
+        <section id="video" class="py-20 bg-white">
+            <h2 class="text-3xl font-bold text-yellow-900 mb-8 text-center">Explora el Proyecto</h2>
+            <div class="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8">
+                <div class="relative">
+                    <iframe width="100%" height="400"
+                            src="https://www.youtube.com/embed/xhQrGTstXHQ?si=dUfjWVXHQGVCovlq"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                </div>
+                <!-- Descripción -->
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-yellow-900 mb-4">Descripción</h3>
+                    <p class="text-lg text-gray-800">En este proyecto puedes elegir entre dos modalidades:</p>
+                    <ul class="mt-4 text-lg text-gray-700">
+                        <li>Comprar la casa con el diseño ofrecido y detallado más adelante en imágenes.</li>
+                        <li>Comprar el lote y construir a tu gusto, siguiendo la fachada recomendada.</li>
+                    </ul>
+                </div>
             </div>
+            <!-- Video -->
+
         </section>
+        
 
         <!-- Features Section -->
         <section id="features" class="py-20 bg-gray-100">
@@ -141,7 +155,7 @@
         <!-- Gallery Section -->
         <section id="gallery" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-yellow-900">Galería</h2>
+                <h2 class="text-3xl font-bold text-yellow-900">Galería de las casas diseñadas</h2>
                 <div class="mt-12 grid gap-8 md:grid-cols-3">
                     <img src="img/comedor.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/comedor.jpeg')">
                     <img src="img/habitacion.jpeg" class="rounded-lg shadow-lg hover-zoom cursor-pointer" onclick="openImage('img/habitacion.jpeg')">
@@ -155,7 +169,7 @@
         <!-- Plans Section -->
         <section id="plans" class="py-20 bg-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl font-bold text-yellow-900">Planos</h2>
+                <h2 class="text-3xl font-bold text-yellow-900">Planos diseñados</h2>
                 <div class="mt-12 grid gap-8 md:grid-cols-2">
                     <div class="bg-white p-6 rounded-lg shadow-lg hover-zoom">
                         <h3 class="text-xl font-bold text-yellow-800 mb-4">Primer piso</h3>
